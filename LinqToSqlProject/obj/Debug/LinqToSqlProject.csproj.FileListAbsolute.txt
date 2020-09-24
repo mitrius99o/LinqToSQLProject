@@ -1,0 +1,7 @@
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.exe.config
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.exe
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\bin\Debug\LinqToSqlProject.pdb
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.csprojAssemblyReference.cache
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.csproj.CoreCompileInputs.cache
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.exe
+C:\Users\Dmitry\source\repos\LinqToSqlProject\LinqToSqlProject\obj\Debug\LinqToSqlProject.pdb
