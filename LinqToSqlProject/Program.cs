@@ -12,47 +12,14 @@ namespace LinqToSqlProject
     [Table(Name="Users")]//составляем атрибуты для отображения базы данных в сущности класса, в нашем случае "Users"
     public class User
     {
-        private int id;
         [Column(IsPrimaryKey=true, Name ="id")]
-        public int Id
-        {
-            get
-            {
-                return this.id;
-            }
-            set
-            {
-                this.id = value;
-            }
-        }
+        public int Id { get; set; }
 
-        private string userName;
         [Column(Name="Name")]
-        public string Name
-        {
-            get
-            {
-                return this.userName;
-            }
-            set
-            {
-                this.userName = value;
-            }
-        }
+        public string Name { get; set; }
 
-        private int userAge;
         [Column(Name="Age")]
-        public int Age
-        {
-            get
-            {
-                return this.userAge;
-            }
-            set
-            {
-                this.userAge = value;
-            }
-        }
+        public int Age { get; set; }
     }
     class Program
     {
@@ -69,18 +36,31 @@ namespace LinqToSqlProject
 
             //*---C о з д а н и е   з а п р о с о в   L I N Q---*//
 
-            //Выборка из всех Customers, которые находятся в Лондоне
-            IQueryable<User> usersNick =
+            //Выборка 1
+            IQueryable<User> usersAndrew =
                 from user in users
-                where user.Name == "Николай"
+                where user.Name == "Андрей"
                 select user;
+
+            //Выборка 2
+            var users20Plus = users.Where(x => x.Age >= 20);
+
+            //Выборка 3 - пересечение коллекций usersAndrew и users20Plus
+            var rezult = users20Plus.Intersect<User>(usersAndrew);
+            
 
             //*---В ы п о л н е н и е   з а п р о с о в   L I N Q---*//
 
             //Вывод выбранной коллекции на экран
-            foreach(User user in usersNick)
+            foreach(User user in usersAndrew)
             {
-                Console.WriteLine("ID={0}, City={1}", user.Name, user.Age);
+                Console.WriteLine("Name={0}, Age={1}", user.Name, user.Age);
+            }
+            Console.ReadLine();
+
+            foreach(User user in rezult)
+            {
+                Console.WriteLine("Name={0}, Age={1}", user.Name, user.Age);
             }
 
             Console.ReadKey();
