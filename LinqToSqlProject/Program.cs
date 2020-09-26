@@ -5,23 +5,11 @@ using System.Data.Linq.Mapping;       //для работы с LinqToSql
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks;     
 
 namespace LinqToSqlProject
 {
-    [Table(Name="Users")]//составляем атрибуты для отображения базы данных в сущности класса, в нашем случае "Users"
-    public class User
-    {
-        [Column(IsPrimaryKey=true, Name ="id")]
-        public int Id { get; set; }
-
-        [Column(Name="Name")]
-        public string Name { get; set; }
-
-        [Column(Name="Age")]
-        public int Age { get; set; }
-    }
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
