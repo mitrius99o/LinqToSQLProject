@@ -10,7 +10,7 @@ namespace LinqToSqlProject
     /*--Хранение таблиц в представлении сущностей классов--*/
 
     [Table(Name = "Users")]//составляем атрибуты для отображения базы данных в сущности класса, в нашем случае "Users"
-    class User
+    public class User
     {
         [Column(IsPrimaryKey = true, Name = "id")]
         public int Id { get; set; }
@@ -20,5 +20,7 @@ namespace LinqToSqlProject
 
         [Column(Name = "Age")]
         public int Age { get; set; }
+        [Column(Name ="Telephone")]
+        public string Telephone { get; set; }
     }
 }

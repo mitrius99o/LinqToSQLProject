@@ -1,0 +1,14 @@
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\ViewWinForms.exe.config
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\ViewWinForms.exe
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\ViewWinForms.pdb
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\LinqToSqlProject.exe
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\LinqToSqlProject.pdb
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\bin\Debug\LinqToSqlProject.exe.config
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.csprojAssemblyReference.cache
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.Form1.resources
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.Properties.Resources.resources
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.csproj.GenerateResource.cache
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.csproj.CoreCompileInputs.cache
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.csproj.CopyComplete
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.exe
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.pdb
