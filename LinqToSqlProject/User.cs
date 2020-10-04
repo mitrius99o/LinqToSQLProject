@@ -17,6 +17,8 @@ namespace LinqToSqlProject
 
         [Column(Name = "Name")]
         public string Name { get; set; }
+        [Column(Name = "Surname")]
+        public string Surname { get;set; }
 
         [Column(Name = "Age")]
         public int Age { get; set; }

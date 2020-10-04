@@ -32,7 +32,7 @@ namespace ViewWinForms
                 selectedGroup = users.Where(x => x.Telephone == textBox1.Text);
 
             foreach (User user in selectedGroup)
-                listBox2.Items.Add($"{user.Name} {user.Telephone}");
+                listBox2.Items.Add($"{user.Name} {user.Surname} {user.Telephone}");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace ViewWinForms
             if (listBox1.Items.Count == 0)
             {
                 foreach (User user in users)
-                    listBox1.Items.Add($"{user.Id} {user.Name} {user.Telephone}");
+                    listBox1.Items.Add($"{user.Id} {user.Name} {user.Surname} {user.Telephone}");
             }
         }
     }
