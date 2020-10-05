@@ -25,12 +25,14 @@ namespace ViewWinForms
         {
             listBox2.Items.Clear();
 
+            //*---C о з д а н и е   з а п р о с о в   L I N Q---*//
             IQueryable<User> selectedGroup;
             if (radioButton1.Checked)
                 selectedGroup = users.Where(x => x.Name == textBox1.Text);
             else
                 selectedGroup = users.Where(x => x.Telephone == textBox1.Text);
 
+            //*---В ы п о л н е н и е   з а п р о с о в   L I N Q---*//
             foreach (User user in selectedGroup)
                 listBox2.Items.Add($"{user.Name} {user.Surname} {user.Telephone}");
         }

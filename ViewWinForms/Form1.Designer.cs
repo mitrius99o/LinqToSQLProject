@@ -62,7 +62,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(247, 108);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(201, 212);
+            this.listBox2.Size = new System.Drawing.Size(217, 186);
             this.listBox2.TabIndex = 1;
             // 
             // label2
@@ -88,14 +88,14 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(247, 82);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(217, 20);
             this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(354, 82);
+            this.button1.Location = new System.Drawing.Point(247, 297);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 20);
+            this.button1.Size = new System.Drawing.Size(217, 40);
             this.button1.TabIndex = 4;
             this.button1.Text = "Найти";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(281, 50);
+            this.radioButton1.Location = new System.Drawing.Point(291, 50);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(72, 17);
             this.radioButton1.TabIndex = 5;
@@ -115,7 +115,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(363, 50);
+            this.radioButton2.Location = new System.Drawing.Point(370, 50);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(88, 17);
             this.radioButton2.TabIndex = 6;
@@ -127,7 +127,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(15, 297);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 23);
+            this.button2.Size = new System.Drawing.Size(201, 40);
             this.button2.TabIndex = 7;
             this.button2.Text = "Показать";
             this.button2.UseVisualStyleBackColor = true;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 332);
+            this.ClientSize = new System.Drawing.Size(476, 349);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
