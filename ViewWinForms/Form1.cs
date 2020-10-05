@@ -15,7 +15,9 @@ namespace ViewWinForms
 {
     public partial class Form1 : Form
     {
+        DataContext db;
         IQueryable<User> users;
+        IQueryable<Call> calls;
         public Form1()
         {
             InitializeComponent();
@@ -40,10 +42,11 @@ namespace ViewWinForms
         private void Form1_Load(object sender, EventArgs e)
         {
             //Подключение к базе данных
-            DataContext db = new DataContext(@"Data Source=DESKTOP-IL0K9BD\SQLEXPRESS;Initial Catalog=phonesdb;User ID=sa;Password=sa");
+            db = new DataContext(@"Data Source=DESKTOP-IL0K9BD\SQLEXPRESS;Initial Catalog=phonesdb;User ID=sa;Password=sa");
 
             //Получить таблицу из бд
             users = db.GetTable<User>();
+            calls = db.GetTable<Call>();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,6 +56,17 @@ namespace ViewWinForms
                 foreach (User user in users)
                     listBox1.Items.Add($"{user.Id} {user.Name} {user.Surname} {user.Telephone}");
             }
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //добавляем выбранного объекта в listbox в таблицу Last_calls
+            //вызываем новую форму, в которой будет listbox с последними звонками контактам
         }
     }
 }
