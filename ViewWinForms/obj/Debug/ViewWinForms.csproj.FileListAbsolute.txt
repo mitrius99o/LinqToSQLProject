@@ -12,3 +12,4 @@ C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForm
 C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.csproj.CopyComplete
 C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.exe
 C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.pdb
+C:\Users\Dmitry\source\repos\LinqToSqlProject\ViewWinForms\obj\Debug\ViewWinForms.LastCalls.resources

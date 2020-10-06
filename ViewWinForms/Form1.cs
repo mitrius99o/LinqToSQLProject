@@ -15,6 +15,7 @@ namespace ViewWinForms
 {
     public partial class Form1 : Form
     {
+        LastCalls lastCallsForm;
         DataContext db;
         IQueryable<User> users;
         IQueryable<Call> calls;
@@ -58,14 +59,13 @@ namespace ViewWinForms
             }
         }
 
-        private void listBox1_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //добавляем выбранного объекта в listbox в таблицу Last_calls
+            lastCallsForm = new LastCalls();
+            lastCallsForm.Show();
+            //добавляем выбранный объект в listbox в таблицу Last_calls
             //вызываем новую форму, в которой будет listbox с последними звонками контактам
         }
     }

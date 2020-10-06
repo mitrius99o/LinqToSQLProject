@@ -8,6 +8,7 @@ namespace ViewWinForms
 {
     static class Program
     {
+        public static Form1 f;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace ViewWinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(f=new Form1());
         }
     }
 }
