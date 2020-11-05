@@ -16,9 +16,8 @@ namespace ViewWinForms
     public partial class Form1 : Form
     {
         LastCalls lastCallsForm;
-        DataContext db;
+        DbSync dbsync;
         IQueryable<User> users;
-        IQueryable<Call> calls;
         public Form1()
         {
             InitializeComponent();
@@ -29,25 +28,26 @@ namespace ViewWinForms
             listBox2.Items.Clear();
 
             //*---C о з д а н и е   з а п р о с о в   L I N Q---*//
-            IQueryable<User> selectedGroup;
+            
             if (radioButton1.Checked)
-                selectedGroup = users.Where(x => x.Name == textBox1.Text);
+                dbsync.selectedGroup1 = users.Where(x => x.Name == textBox1.Text);
             else
-                selectedGroup = users.Where(x => x.Telephone == textBox1.Text);
+                dbsync.selectedGroup1 = users.Where(x => x.Telephone == textBox1.Text);
 
             //*---В ы п о л н е н и е   з а п р о с о в   L I N Q---*//
-            foreach (User user in selectedGroup)
+            foreach (User user in dbsync.selectedGroup1)
                 listBox2.Items.Add($"{user.Name} {user.Surname} {user.Telephone}");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //Подключение к базе данных
-            db = new DataContext(@"Data Source=DESKTOP-IL0K9BD\SQLEXPRESS;Initial Catalog=phonesdb;User ID=sa;Password=sa");
+            DbSync.SetDbContext(@"Data Source=DESKTOP-IL0K9BD\SQLEXPRESS;Initial Catalog=phonesdb;User ID=sa;Password=sa");
+            
+            dbsync = new DbSync();
 
             //Получить таблицу из бд
-            users = db.GetTable<User>();
-            calls = db.GetTable<Call>();
+            users = DbSync.db.GetTable<User>();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,9 +58,6 @@ namespace ViewWinForms
                     listBox1.Items.Add($"{user.Id} {user.Name} {user.Surname} {user.Telephone}");
             }
         }
-
-        
-
         private void button3_Click(object sender, EventArgs e)
         {
             lastCallsForm = new LastCalls();
